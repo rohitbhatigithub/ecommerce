@@ -1,0 +1,269 @@
+*{
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+}
+.navbar{
+  height: 92px;
+ 
+}
+.navbar_heading{
+  display: flex;  
+  justify-content: space-between;
+  padding: 10px;
+  height: 80px;
+}
+.fa-home{
+  font-size: 40px;
+}
+.fa-cart-arrow-down{
+  font-size: 40px;
+}
+sup{
+  font-size: 35px;
+  color: white;
+  background: #a666cb;
+  border-radius:50% ;
+  padding: 5px;
+}
+.web_name{
+  font-size: 50px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+} 
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+ margin-top: -50px;
+}
+.box_container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 495px;
+  margin: 20px;
+  border: none;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.img1{
+  width: 100%;
+  height: 280px;
+}
+.box_item{
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;  
+}
+.btn_item{
+  height: 44px;
+  width: 100%;
+  background-color:rgb(226 211 124);;
+  cursor: pointer;
+  border: none;
+}
+.btn_item:hover{
+  background-color: green;
+  color: white;
+}
+.addtocart{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.fa{
+ font-size: 28px;
+ margin: 6px;
+}
+.logo_div{
+  margin: 8px;
+}
+.logoName{
+  font-size: 28px;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.filter-btn {
+  background: transparent;
+  border-color: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  padding: 0.375rem 0.75rem;
+  color: var(--clr-gold);
+  cursor: pointer;
+  transition: var(--transition);
+  border-radius: var(--radius);
+}
+
+.btn{
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  border: none;
+  background-color: #5dbea3;
+}
+.btn:hover{
+cursor: pointer;
+background-color:rgb(37, 52, 52) ;
+border-radius: 10px;
+}
+
+
+
+/* cart */
+
+.allCartItem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cartItem{
+  display: flex;
+  width: 27%;
+  height: 250px;
+  margin: 10px;
+  flex-direction: row;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.cartImg{
+  width: 60px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding:5px ;
+}
+.cartImg{
+  width:120px ;
+}
+.box_item1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin: 10px;
+}
+.minusAdd{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 90%;
+}
+.counter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.fa-trash{
+color: rgb(212, 22, 22);
+cursor: pointer;
+}
+
+
+/* Payment checkout btn ..........  */
+
+.checkOutBtn{
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+}
+
+.checkOutBtn:hover{
+  background-color: rgb(11, 64, 11);
+}
+
+
+
+/* PaymentCheckout component */
+.checkOut{
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: center;
+height: 100vh;
+flex-direction: column;
+}
+.checkOut_container{
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin: 30px;
+}
+.input{
+  margin: 10px;
+}
+
+.error{
+  color: #ff0000;
+}
+.success{
+  font-size: 30px;
+  color: green;
+}
+
+
+
+
+/* media query */
+@media(max-width : 480px){
+ .box_container{
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .filter-btn{
+  margin: auto;
+ }
+ .btn{
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 6px;
+ }
+ .box {
+  display: block;
+  display: flex;
+  align-items: center;
+  margin-top: -50px;
+}
+.cartItem {
+  display: block;
+  width: 200px;
+  height: 320px;
+  margin: auto;
+  flex-direction: row;
+  box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+  margin: 10px;
+}
+
+}
+.cart{
+  position: relative;
+}
+.count{
+  position: absolute;
+  right: -8px;
+  top: -3px;
+  background: pink;
+  border-radius: 50%;
+  width: 19px;
+  height: 16px;
+}
