@@ -7,7 +7,7 @@ import Loading from './Loading';
 const Home = ({setCartItem,cartItem}) => {
  const[data ,setData] = useState([]);
     const[FilterData ,setFilterData] = useState([]);
-    const [dataLength,setDataLength] = useState();
+    const [setDataLength] = useState();
     const [loading , setLoading] = useState(false);
  
 
